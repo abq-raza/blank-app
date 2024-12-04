@@ -1,8 +1,35 @@
 import streamlit as st
 import random
-
+st.set_page_config(
+    page_title="Student Comment Generator",
+    page_icon="🎓",
+    layout="centered",
+    initial_sidebar_state="auto",
+)
+def add_footer():
+    footer = """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        color: #555;
+        text-align: center;
+        padding: 10px 0;
+    }
+    </style>
+    <div class="footer">
+        Made with ❤️ by Raza
+    </div>
+    """
+    st.markdown(footer, unsafe_allow_html=True)
 # Title of the app
-st.title("Student Comment Generator")
+# Display the logo at the top
+logo_url = "https://assets.mograsys.com/Content/alimtiaz/Images/SchoolLogo/mograsys.jpg"
+st.image(logo_url, use_column_width=True)
+st.title("Homeroom - Student Comment Generator")
 
 # Description
 st.write("""
@@ -76,3 +103,5 @@ if st.button("Generate Comment"):
         comment = generate_comment(student_name, grade)
         st.success("Generated Comment:")
         st.write(comment)
+# Add footer
+add_footer()
