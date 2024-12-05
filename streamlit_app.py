@@ -110,6 +110,34 @@ grade4_comments = [
     "{name}'s courteous and well-mannered behavior is commendable. They consistently display politeness and respect towards peers, creating a positive environment in the classroom. Setting goals and targets will provide them with a clear direction and motivation to strive for academic excellence."
 ]
 
+# Grade 5 Comments
+grade5_comments = [
+    "{name} consistently demonstrates a strong understanding of the curriculum. Their analytical skills and ability to think critically are commendable. Encouraging {name} to participate more in class discussions will further enhance their learning experience.",
+    "{name} has shown remarkable improvement in their academic performance this term. Their dedication to completing assignments on time and actively seeking help when needed is impressive. Continuing this level of commitment will undoubtedly lead to further success.",
+    "{name} is a proactive learner who takes initiative in both individual and group tasks. Their ability to collaborate effectively with peers is a significant asset to the classroom dynamic. Focusing on refining their presentation skills will benefit {name} in future projects.",
+    "{name} exhibits a keen interest in all subjects, particularly excelling in mathematics and science. Their problem-solving abilities are outstanding. To further develop, {name} should focus on enhancing their writing skills to complement their analytical strengths.",
+    "{name} is a responsible and dependable student who consistently meets deadlines and maintains high standards in their work. Their positive attitude and willingness to help others contribute to a supportive classroom environment.",
+    "{name} has a strong grasp of the material covered this term and applies their knowledge effectively in assignments and exams. Encouraging {name} to engage more in extracurricular activities will help in their overall personal development.",
+    "{name} is highly motivated and demonstrates excellent time management skills. Their ability to balance academic responsibilities with extracurricular commitments is impressive. Continuing to set personal goals will help {name} achieve even greater heights.",
+    "{name} shows exceptional creativity and originality in their projects. Their ability to think outside the box is a valuable trait. Focusing on developing their research skills will further enhance {name}'s academic performance.",
+    "{name} is an enthusiastic participant in class activities and shows great leadership potential. Their ability to guide and inspire peers is noteworthy. Encouraging {name} to take on more leadership roles will benefit both them and their classmates.",
+    "{name} consistently produces high-quality work and demonstrates a thorough understanding of complex concepts. Their dedication to continuous improvement is admirable. Fostering {name}'s curiosity through advanced topics can further stimulate their intellectual growth."
+]
+
+# Grade 6 Comments
+grade6_comments = [
+    "{name} has shown outstanding academic performance throughout the year. Their ability to grasp complex concepts quickly and apply them effectively is impressive. Encouraging {name} to take on more challenging projects will further enhance their learning.",
+    "{name} is a diligent student who consistently produces excellent work. Their attention to detail and commitment to understanding the material deeply are commendable. {name} would benefit from participating in class debates to strengthen their public speaking skills.",
+    "{name} demonstrates a high level of maturity and responsibility in all aspects of their schoolwork. Their ability to manage time effectively and prioritize tasks is exemplary. Continuing to set ambitious goals will help {name} achieve their full potential.",
+    "{name} is a highly motivated learner who excels in both individual and group settings. Their leadership qualities and ability to collaborate with peers make them a valuable member of any team. Focusing on enhancing their analytical writing skills will benefit {name}'s academic journey.",
+    "{name} exhibits a strong passion for learning, particularly in subjects such as history and literature. Their insightful contributions to class discussions enrich the learning environment for everyone. Encouraging {name} to engage in independent research projects will further develop their critical thinking skills.",
+    "{name} consistently demonstrates exceptional problem-solving abilities and a keen analytical mind. Their proactive approach to seeking help when needed shows a commitment to continuous improvement. {name} should consider exploring advanced topics to further challenge their intellectual capabilities.",
+    "{name} is a respectful and cooperative student who consistently upholds classroom standards. Their ability to work harmoniously with others contributes to a positive learning atmosphere. Encouraging {name} to take on mentorship roles can help them develop leadership skills.",
+    "{name} has shown significant growth in their academic performance this year. Their perseverance and dedication to overcoming challenges are admirable. Focusing on enhancing their presentation and communication skills will further support {name}'s academic success.",
+    "{name} is an enthusiastic learner who approaches each subject with curiosity and determination. Their ability to connect ideas across different disciplines is impressive. Encouraging {name} to engage in extracurricular academic competitions can provide additional opportunities for growth.",
+]
+
+
 # Function to generate comment
 def generate_comment(name, grade):
     if grade == "KG1":
