@@ -36,7 +36,7 @@ st.title("Homeroom - Student Comment Generator")
 
 # Description
 st.write("""
-Enter the student's name and select their grade to generate a personalized comment.
+Enter the student's name and select their grade to generate a sample comment for the student. ALWAYS VERIFY AND DOUBLE CHECK.
 """)
 
 # Input fields
@@ -134,7 +134,7 @@ if st.button("Generate Comment"):
         st.error("Please enter the student's name.")
     else:
         comment = generate_comment(student_name, grade)
-        st.success("Generated Comment:")
+        st.success("Sample Generated Comment:")
         st.write(comment)
 
 # Add footer
