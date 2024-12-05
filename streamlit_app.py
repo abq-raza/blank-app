@@ -41,7 +41,7 @@ Enter the student's name and select their grade to generate a sample comment for
 
 # Input fields
 student_name = st.text_input("Student Name")
-grade = st.selectbox("Grade", ("KG1", "KG2", "Grade 1", "Grade 2", "Grade 3", "Grade 4"))
+grade = st.selectbox("Grade", ("KG1", "KG2", "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6"))
 
 # Define comments with {name} as placeholder
 
@@ -152,6 +152,10 @@ def generate_comment(name, grade):
         comment = random.choice(grade3_comments)
     elif grade == "Grade 4":
         comment = random.choice(grade4_comments)
+    elif grade == "Grade 5":
+        comment = random.choice(grade5_comments)
+    elif grade == "Grade 6":
+        comment = random.choice(grade6_comments)
     else:
         comment = "No comments available for the selected grade."
     return comment.format(name=name)
