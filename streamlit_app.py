@@ -32,7 +32,7 @@ def add_footer():
 # Display the logo at the top
 logo_url = "https://assets.mograsys.com/Content/alimtiaz/Images/SchoolLogo/mograsys.jpg"
 st.image(logo_url, width=150)
-st.title("Homeroom - Student Comment Generator")
+st.title("Homeroom-Student Comment Generator")
 
 # Description
 st.write("""
