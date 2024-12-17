@@ -43,8 +43,6 @@ Enter the student's name and select their grade and comment category to generate
 student_name = st.text_input("Student Name")
 grade = st.selectbox("Grade", ("KG1", "KG2", "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6"))
 
-# Define comments with {name} as placeholder
-
 organized_comments = {
     "KG1": {
         "Exemplary, High Achievers Outstanding students": [
@@ -169,27 +167,25 @@ organized_comments = {
     }
 }
 
-# Function to get available categories for a given grade
-def get_categories(grade):
-    return list(organized_comments.get(grade, {}).keys())
+def get_categories(selected_grade):
+    return list(organized_comments.get(selected_grade, {}).keys())
 
-# Function to generate comment
-def generate_comment(name, grade, category):
-    grade_comments = organized_comments.get(grade, {})
-    category_comments = grade_comments.get(category, [])
+def generate_comment(name, selected_grade, selected_category):
+    grade_comments = organized_comments.get(selected_grade, {})
+    category_comments = grade_comments.get(selected_category, [])
     if not category_comments:
         return "No comments available for the selected grade and category."
     comment = random.choice(category_comments)
     return comment.format(name=name)
 
-# Category selection based on grade
-if grade in organized_comments:
-    categories = get_categories(grade)
+# Now, always attempt to display categories after grade is selected
+categories = get_categories(grade)
+if categories:
     category = st.selectbox("Comment Category", categories)
 else:
+    st.warning("No categories available for the selected grade.")
     category = None
 
-# Button to generate comment
 if st.button("Generate Comment"):
     if student_name.strip() == "":
         st.error("Please enter the student's name.")
@@ -203,5 +199,4 @@ if st.button("Generate Comment"):
             st.success("Sample Generated Comment:")
             st.write(comment)
 
-# Add footer
 add_footer()
