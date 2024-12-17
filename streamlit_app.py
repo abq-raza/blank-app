@@ -91,7 +91,6 @@ organized_comments = {
     "Grade 2": {
         "Exemplary, High Achievers Outstanding students": [
             "{name} is a fast learner and excels in understanding new concepts. They demonstrate a natural ability to grasp and apply new information. Their enthusiasm for learning is commendable. They have the potential to improve in the areas of organization and cleanliness. With guidance and practice, they can develop excellent organizational skills. In terms of spellings, they have the potential to improve their skills further!",
-            "{name} is a remarkable student who consistently demonstrates a neat and well-organized approach to their work. They have shown great agility in class activities. Additionally, they have demonstrated intelligence in their academic work, consistently understanding concepts and applying them effectively. To further enhance their learning experience, they are encouraged to continue upgrading their knowledge beyond the curriculum. Keep up the spirit!",
             "{name} is a remarkable student who consistently demonstrates a neat and well-organized approach to their work. They have shown great agility in class activities. Additionally, they have demonstrated intelligence in their academic work, consistently understanding concepts and applying them effectively. To further enhance their learning experience, they are encouraged to continue upgrading their knowledge beyond the curriculum. Keep up the spirit!"
         ],
         "Steady and Competent and Accomplished Achievers": [
@@ -111,7 +110,8 @@ organized_comments = {
             "{name} has a passion for learning and studies with enthusiasm, always keen to learn something new. They are very cooperative and constantly treat their peers with kindness and respect. Opportunities for growth exist in both reading and speaking skills. Consistent practice in reading can lead to remarkable progress."
         ],
         "Rising, developing and Emerging students": [
-            # Add comments if available
+            "{name} is showing promising growth in their academic and social skills. With continued encouragement and support, they will become more confident in their abilities and contribute positively to the classroom environment.",
+            "{name} is developing a stronger understanding of the curriculum. Focusing on active participation during lessons will further enhance their learning experience."
         ]
     },
     "Grade 4": {
@@ -125,7 +125,8 @@ organized_comments = {
             "{name}'s courteous and well-mannered behavior is commendable. They consistently display politeness and respect towards peers, creating a positive environment in the classroom. Setting goals and targets will provide them with a clear direction and motivation to strive for academic excellence."
         ],
         "Rising, developing and Emerging students": [
-            # Add comments if available
+            "{name} is gradually building their confidence in class discussions. With more encouragement, they will become more active participants and further develop their communication skills.",
+            "{name} is showing improvement in their organizational skills. Continued focus on task management will help them excel even more in their studies."
         ]
     },
     "Grade 5": {
@@ -144,7 +145,8 @@ organized_comments = {
             "{name} is a responsible and dependable student who consistently meets deadlines and maintains high standards in their work. Their positive attitude and willingness to help others contribute to a supportive classroom environment."
         ],
         "Rising, developing and Emerging students": [
-            # Add comments if available
+            "{name} is beginning to show more interest in class activities and discussions. With continued encouragement, they will develop greater confidence in their abilities.",
+            "{name} is making steady progress in their studies. Focusing on building stronger study habits will help them achieve their full potential."
         ]
     },
     "Grade 6": {
@@ -161,7 +163,8 @@ organized_comments = {
             "{name} has shown significant growth in their academic performance this year. Their perseverance and dedication to overcoming challenges are admirable. Focusing on enhancing their presentation and communication skills will further support {name}'s academic success."
         ],
         "Rising, developing and Emerging students": [
-            # Add comments if available
+            "{name} is gradually improving in their academic performance. With continued support and encouragement, they will build greater confidence in their abilities.",
+            "{name} is beginning to engage more actively in class activities. Focusing on participation will help {name} enhance their learning experience."
         ]
     }
 }
