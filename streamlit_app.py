@@ -35,7 +35,7 @@ st.title("Homeroom-Student Comment Generator")
 
 # Description
 st.write("""
-Enter the student's name and select their grade and comment category to generate all sample comments for that category. **ALWAYS VERIFY AND DOUBLE CHECK**.
+Enter the student's name and select their grade and comment category to generate all sample comments for that category. **ALWAYS VERIFY AND DOUBLE CHECK**. **REPLACE 'THEIR'/'THEY' WITH 'HER/SHE' or 'HIS/HE' DEPENDING ON THEIR GENDER. 
 """)
 
 # Input fields
