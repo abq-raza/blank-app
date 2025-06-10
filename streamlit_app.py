@@ -1,5 +1,4 @@
 import streamlit as st
-import random
 
 # Set page configuration
 st.set_page_config(
@@ -36,7 +35,7 @@ st.title("Homeroom-Student Comment Generator")
 
 # Description
 st.write("""
-Enter the student's name and select their grade and comment category to generate a sample comment for the student. **ALWAYS VERIFY AND DOUBLE CHECK**.
+Enter the student's name and select their grade and comment category to generate all sample comments for that category. **ALWAYS VERIFY AND DOUBLE CHECK**.
 """)
 
 # Input fields
@@ -170,13 +169,15 @@ organized_comments = {
 def get_categories(selected_grade):
     return list(organized_comments.get(selected_grade, {}).keys())
 
-def generate_comment(name, selected_grade, selected_category):
+def generate_comments(name, selected_grade, selected_category):
     grade_comments = organized_comments.get(selected_grade, {})
     category_comments = grade_comments.get(selected_category, [])
     if not category_comments:
-        return "No comments available for the selected grade and category."
-    comment = random.choice(category_comments)
-    return comment.format(name=name)
+        return []
+    
+    # Format all comments with the student's name
+    formatted_comments = [comment.format(name=name) for comment in category_comments]
+    return formatted_comments
 
 # Now, always attempt to display categories after grade is selected
 categories = get_categories(grade)
@@ -186,17 +187,22 @@ else:
     st.warning("No categories available for the selected grade.")
     category = None
 
-if st.button("Generate Comment"):
+if st.button("Generate Comments"):
     if student_name.strip() == "":
         st.error("Please enter the student's name.")
     elif category is None:
         st.error("Please select a valid comment category.")
     else:
-        comment = generate_comment(student_name, grade, category)
-        if comment.startswith("No comments"):
-            st.warning(comment)
+        comments = generate_comments(student_name, grade, category)
+        if not comments:
+            st.warning("No comments available for the selected grade and category.")
         else:
-            st.success("Sample Generated Comment:")
-            st.write(comment)
+            st.success("Generated Comments:")
+            # Display all generated comments
+            for i, comment_text in enumerate(comments, 1):
+                st.markdown(f"**Option {i}:**")
+                st.write(comment_text)
+                st.markdown("---")
+
 
 add_footer()
