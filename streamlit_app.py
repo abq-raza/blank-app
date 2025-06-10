@@ -338,7 +338,7 @@ if st.button("Generate Comments"):
             st.success("Generated Comments:")
             # Display all generated comments
             for i, comment_text in enumerate(comments, 1):
-                st.markdown(f"**Option {i}:**")
+                st.markdown(f"**EXAMPLE {i}:**")
                 st.write(comment_text)
                 st.markdown("---")
 
